@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration — Ramanuj Vidyapeeth International School (R V I)</title>
+  <meta name="description" content="Register your child at Ramanuj Vidyapeeth International School — a proposed tuition-free public charter school serving San Diego County, grades K–12.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito+Sans:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body data-page="registration">
+
+  <header id="site-header" class="site-header"></header>
+  <nav    id="site-nav"    class="site-nav" role="navigation" aria-label="Main navigation"></nav>
+
+  <main id="main-content">
+
+    <!-- ══ PAGE HERO ════════════════════════════════════════════ -->
+    <div class="page-hero page-hero-reg">
+      <div class="container">
+        <h1>Registration</h1>
+        <p>Join us in building a vibrant learning community — open to all families</p>
+      </div>
+    </div>
+
+    <div class="container page-content">
+
+      <!-- Info Strip -->
+      <div class="reg-info-strip" role="list" aria-label="Key registration facts">
+        <div class="reg-info-item" role="listitem">
+          <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+          <div>
+            <strong>Tuition-Free</strong>
+            Public Charter School
+          </div>
+        </div>
+        <div class="reg-info-item" role="listitem">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+          <div>
+            <strong>Grades K–12</strong>
+            Year 1: K–8, growing to K–12
+          </div>
+        </div>
+        <div class="reg-info-item" role="listitem">
+          <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+          <div>
+            <strong>Proposed Launch</strong>
+            Fall 2027
+          </div>
+        </div>
+        <div class="reg-info-item" role="listitem">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          <div>
+            <strong>San Diego County</strong>
+            Countywide Benefit Charter
+          </div>
+        </div>
+      </div>
+
+      <!-- Embedded Registration Form -->
+      <div class="form-section">
+        <h2 class="form-heading">
+          <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+          Registration Form
+        </h2>
+        <p class="form-note">
+          Complete the form below to register your child or express interest in enrollment
+          at Ramanuj Vidyapeeth International School. Early registration helps us understand
+          community interest and plan accordingly.
+        </p>
+        <div class="jotform-wrapper">
+          <!-- JotForm embed — change src and id to swap forms -->
+          <iframe
+            id="JotFormIFrame-262175988449173"
+            title="RVI Registration Form"
+            onload="window.parent.scrollTo(0,0)"
+            allowtransparency="true"
+            allow="geolocation; microphone; camera; fullscreen"
+            src="https://form.jotform.com/262175988449173"
+            frameborder="0"
+            style="min-width:100%;max-width:100%;height:620px;border:none;"
+            scrolling="yes">
+          </iframe>
+        </div>
+      </div>
+
+    </div><!-- /.container .page-content -->
+
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <!-- JotForm auto-resize script -->
+  <script>
+    (function () {
+      var ifr = document.getElementById('JotFormIFrame-262175988449173');
+      window.handleIFrameMessage = function (e) {
+        if (typeof e.data !== 'string') return;
+        var args = e.data.split(':');
+        if (!ifr) return;
+        if (args[0] === 'setHeight')      ifr.style.height  = args[1] + 'px';
+        if (args[0] === 'scrollIntoView') ifr.scrollIntoView();
+        if (args[0] === 'reloadPage')     window.location.reload();
+      };
+      if (window.addEventListener) window.addEventListener('message', handleIFrameMessage, false);
+    })();
+  </script>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

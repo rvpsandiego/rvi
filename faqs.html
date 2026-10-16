@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs — Ramanuj Vidyapeeth International School (R V I)</title>
+  <meta name="description" content="Frequently asked questions about Ramanuj Vidyapeeth International School — enrollment, academics, language programs, and more.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito+Sans:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body data-page="faqs">
+
+  <header id="site-header" class="site-header"></header>
+  <nav    id="site-nav"    class="site-nav" role="navigation" aria-label="Main navigation"></nav>
+
+  <main id="main-content">
+
+    <!-- ══ PAGE HERO ════════════════════════════════════════════ -->
+    <div class="page-hero page-hero-faq">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p>Answers to common questions about Ramanuj Vidyapeeth International School</p>
+      </div>
+    </div>
+
+    <div class="container page-content">
+
+      <!-- Category Filter Buttons -->
+      <div class="faq-filters" id="faqFilters" role="group" aria-label="Filter FAQs by category">
+        <button class="faq-filter-btn active" onclick="filterFAQ('all'); return false;" data-filter="all">All</button>
+        <button class="faq-filter-btn" onclick="filterFAQ('admissions'); return false;" data-filter="admissions">Admissions</button>
+        <button class="faq-filter-btn" onclick="filterFAQ('academics'); return false;" data-filter="academics">Academics</button>
+        <button class="faq-filter-btn" onclick="filterFAQ('programs'); return false;" data-filter="programs">Programs</button>
+      </div>
+
+      <!-- ── Admissions ────────────────────────────────────── -->
+      <div class="faq-group" data-category="admissions">
+        <h2 class="faq-group-title">
+          <i class="fas fa-user-plus" aria-hidden="true"></i> Admissions
+        </h2>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            What is Ramanuj Vidyapeeth International School?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Ramanuj Vidyapeeth International School (R V I) is a proposed public charter school
+              serving San Diego County. It offers an inclusive, academically rigorous, and culturally
+              responsive education through trilingual immersion in English, Hindi, and Sanskrit,
+              combined with Project-Based Learning. The school is rooted in timeless values of
+              Dharma and Sanskar.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            Is the school tuition-free?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! Ramanuj Vidyapeeth is proposed as a tuition-free public charter school — open
+              to all families in San Diego County. As a Countywide Benefit Charter School, there
+              are no enrollment fees.
+            </p>
+            <p>
+              <em>Note: Until the school is formally adopted by SDUSD, the program may be
+              tuition-based. The long-term vision is a fully tuition-free public charter.</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            When is the school expected to open?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The proposed launch timeline is <strong>Fall 2027</strong>. In Year 1, the school
+              will serve grades K–8, with plans to grow to a full K–12 program in subsequent years.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            What grades does the school serve?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The school is designed to serve students from Kindergarten through Grade 12 (K–12).
+              The school will begin with grades K–8 in Year 1 and expand to include grades 9–12
+              in subsequent years.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            How do I enroll my child?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              You can express interest and register your child through the Registration form on our
+              website (see the <a href="registration.html">Registration</a> page). Early registration
+              helps us understand community interest and plan capacity accordingly. You can also email
+              us at <a href="mailto:rvpsandiego@gmail.com">rvpsandiego@gmail.com</a> with any
+              questions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            Is this school open to students of all backgrounds?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely. Ramanuj Vidyapeeth International School is an <strong>inclusive</strong>
+              public charter school open to all families in San Diego County, regardless of cultural
+              background, religion, or ethnicity. Our multicultural curriculum celebrates diverse
+              traditions and fosters appreciation of global perspectives alongside Bharatiya heritage.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /admissions group -->
+
+      <!-- ── Academics ─────────────────────────────────────── -->
+      <div class="faq-group" data-category="academics">
+        <h2 class="faq-group-title">
+          <i class="fas fa-book" aria-hidden="true"></i> Academics
+        </h2>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            What is the academic curriculum like?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Our curriculum is fully aligned with California state standards and integrates STEM, Humanities, and Arts. Key features include:</p>
+            <ul>
+              <li>Standards-aligned instruction with a global perspective</li>
+              <li>Project-Based Learning (PBL) as a core instructional model</li>
+              <li>Trilingual immersion in English, Hindi, and Sanskrit</li>
+              <li>Social-Emotional Learning (SEL)</li>
+              <li>Performance-based assessment to evaluate growth holistically</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            What is Project-Based Learning (PBL)?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Project-Based Learning is a student-centered teaching method where students learn by
+              actively engaging in real-world, meaningful projects. Instead of memorizing facts,
+              students investigate complex questions, solve authentic problems, and create
+              high-quality work products. At RVI, PBL builds 21st century skills including
+              critical thinking, creativity, collaboration, and communication.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            What is the Seal of Biliteracy?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              The Seal of Biliteracy is a California state award recognizing students who demonstrate
+              proficiency in two or more languages. RVI's biliteracy pathway is designed to prepare
+              students to earn this seal, which is recognized on high school diplomas and valued by
+              colleges and employers. Students will develop proficiency in English alongside Hindi
+              and/or Sanskrit.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            What support is available for students with special needs?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>RVI is committed to supporting every learner through a comprehensive support framework:</p>
+            <ul>
+              <li><strong>MTSS</strong> (Multi-Tiered System of Supports) — early identification and intervention</li>
+              <li><strong>Special Education</strong> services for students with IEPs</li>
+              <li><strong>English Learner support</strong> for students developing English proficiency</li>
+              <li><strong>Inclusive classrooms</strong> that value neurodiversity</li>
+              <li><strong>Universal Design for Learning (UDL)</strong> — flexible instructional approaches</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /academics group -->
+
+      <!-- ── Programs ──────────────────────────────────────── -->
+      <div class="faq-group" data-category="programs">
+        <h2 class="faq-group-title">
+          <i class="fas fa-star" aria-hidden="true"></i> Programs
+        </h2>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            Why is Sanskrit taught at the school?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sanskrit is one of the world's oldest and most systematic languages, connecting
+              students to a rich tradition of ancient wisdom, philosophy, mathematics, and
+              literature. Learning Sanskrit strengthens understanding of grammar and linguistics,
+              enhances vocabulary across many world languages (including English), and connects
+              students to their cultural heritage. It is also a key component of the school's
+              values-based education rooted in Dharma and Sanskar.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            Does the school require students to speak Hindi or Sanskrit at home?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              No — students do not need to speak Hindi or Sanskrit at home. The school's immersive
+              program is designed to teach these languages within the school environment. Families
+              who speak these languages at home will find it enriching, but it is not a requirement
+              for enrollment. All students begin their language journey at the school regardless of
+              prior exposure.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            What cultural celebrations does the school observe?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              RVI believes in celebrating the rich tapestry of cultural traditions. The school
+              observes:
+            </p>
+            <ul>
+              <li><strong>Rakhi (Raksha Bandhan)</strong></li>
+              <li><strong>Eid al-Fitr</strong></li>
+              <li><strong>Guru Nanak Jayanti</strong></li>
+              <li><strong>Diwali (Deepawali)</strong></li>
+              <li><strong>Holi (Festival of Colors)</strong></li>
+              <li><strong>Christmas</strong></li>
+            </ul>
+            <p>
+              These celebrations are educational opportunities to discover the cultural significance
+              and joyful traditions of key global festivals.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            What extracurricular or enrichment activities will be offered?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Students at RVI will have opportunities to engage in:</p>
+            <ul>
+              <li>Inquiry-based projects and research</li>
+              <li>Student leadership programs</li>
+              <li>Community service initiatives</li>
+              <li>Cultural celebrations and performances</li>
+              <li>Technology integration and digital literacy</li>
+            </ul>
+            <p>
+              Full extracurricular program details will be announced closer to the school's
+              launch in Fall 2027.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false">
+            Is the school affiliated with any religious organization?
+            <i class="fas fa-chevron-down faq-icon" aria-hidden="true"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              No. Ramanuj Vidyapeeth International School is a public charter school and is not
+              affiliated with any religious organization. The school's focus on Sanskrit, Dharma,
+              and Bharatiya cultural values is rooted in cultural heritage and universal ethical
+              principles — not religious doctrine. The school welcomes students and families of
+              all faiths and backgrounds.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /programs group -->
+
+      <!-- Still have questions? -->
+      <div class="faq-cta">
+        <p>Still have questions? We're happy to help.</p>
+        <a href="contact.html" class="btn btn-primary">
+          <i class="fas fa-envelope" aria-hidden="true"></i> Contact Us
+        </a>
+      </div>
+
+    </div><!-- /.container .page-content -->
+
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/faqs.js"></script>
+</body>
+</html>
